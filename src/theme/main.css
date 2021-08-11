@@ -1,0 +1,207 @@
+body {
+  color: #ffffff;
+}
+
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1178px;
+  height: 722px;
+  background-color: #1b102e;
+}
+
+.app p {
+  margin: 0;
+}
+
+.app__leftside {
+  -ms-flex-preferred-size: 220px;
+      flex-basis: 220px;
+  background-color: #0f0323;
+  padding: 21px 0px 31px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.app__leftside__avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 81px;
+      flex-basis: 81px;
+  margin: 0px 0px 27px 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app__leftside__avatar img {
+  height: 81px;
+  width: auto;
+  border-radius: 32px;
+}
+
+.app__leftside__username {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px 0px 27px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app__leftside__username p {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+}
+
+.app__leftside__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.app__leftside__menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.app__leftside__menu ul li {
+  font-size: 10px;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 16px 0px 16px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app__leftside__menu ul li .icon {
+  width: 26px;
+  font-size: 26px;
+  margin: 0px 14px 0px 0px;
+}
+
+.app__leftside__logout {
+  padding: 0px 0px 0px 30px;
+}
+
+.app__rightside {
+  -ms-flex-preferred-size: 958px;
+      flex-basis: 958px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.app__rightside__header {
+  background-image: url("../images/mpl-header.png");
+  background-color: #0f0323;
+  -ms-flex-preferred-size: 170px;
+      flex-basis: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-app-region: drag;
+}
+
+.app__rightside__header__title {
+  padding-left: 32px;
+  font-size: 30.5px;
+  letter-spacing: 1.53px;
+  text-transform: uppercase;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.app__rightside__header__version {
+  padding: 19px 31px 0px 0px;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+}
+
+.app__rightside__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 552px;
+      flex-basis: 552px;
+  padding: 25px 65px 34px 65px;
+}
+
+.app__rightside__content__latestnews {
+  -ms-flex-preferred-size: 600px;
+      flex-basis: 600px;
+}
+
+.app__rightside__content__sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 65px;
+}
+
+.app__rightside__content__sidebar__findus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0.6;
+      -ms-flex: 0.6;
+          flex: 0.6;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */

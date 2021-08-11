@@ -1,0 +1,121 @@
+$app-width: 1178px;
+$app-height: 722px;
+
+body {
+  color: #ffffff;
+}
+
+.app {
+  display: flex;
+  width: $app-width;
+  height: $app-height;
+  background-color: #1b102e;
+  p {
+    margin: 0;
+  }
+  &__leftside {
+    flex-basis: 220px;
+    background-color: #0f0323;
+    padding: 21px 0px 31px 0px;
+    display: flex;
+    flex-direction: column;
+    &__avatar {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 81px;
+      margin: 0px 0px 27px 0px;
+      justify-content: center;
+      align-items: center;
+      img {
+        height: 81px;
+        width: auto;
+        border-radius: 32px;
+      }
+    }
+    &__username {
+      display: flex;
+      flex-direction: column;
+      margin: 0px 0px 27px 0px;
+      align-items: center;
+      p {
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.7px;
+      }
+    }
+    &__menu {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        li {
+          font-size: 10px;
+          font-weight: 300;
+          text-transform: uppercase;
+          padding: 16px 0px 16px 30px;
+          display: flex;
+          align-items: center;
+
+          .icon {
+            width: 26px;
+            font-size: 26px;
+            margin: 0px 14px 0px 0px;
+          }
+        }
+      }
+    }
+    &__logout {
+      padding: 0px 0px 0px 30px;
+    }
+  }
+  &__rightside {
+    flex-basis: $app-width - 220px;
+    display: flex;
+    flex-direction: column;
+    &__header {
+      background-image: url("../images/mpl-header.png");
+      background-color: #0f0323;
+      flex-basis: 170px;
+      display: flex;
+      align-items: center;
+      user-select: none;
+      -webkit-app-region: drag;
+      &__title {
+        padding-left: 32px;
+        font-size: 30.5px;
+        letter-spacing: 1.53px;
+        text-transform: uppercase;
+        flex: 1;
+      }
+      &__version {
+        padding: 19px 31px 0px 0px;
+        font-size: 12px;
+        letter-spacing: 0.6px;
+        align-self: baseline;
+      }
+    }
+    &__content {
+      display: flex;
+      flex-basis: $app-height - 170px;
+      padding: 25px 65px 34px 65px;
+      &__latestnews {
+        flex-basis: 600px;
+      }
+      &__sidebar {
+        display: flex;
+        flex-direction: column;
+        padding-left: 65px;
+        &__findus {
+          display: flex;
+          flex: 0.6;
+          flex-direction: column;
+          justify-content: space-around;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
