@@ -93,7 +93,14 @@ body {
   list-style-type: none;
 }
 
-.app__leftside__menu ul li {
+.app__leftside__menu ul li .active {
+  color: #ffffff;
+  background-color: #1b102e;
+}
+
+.app__leftside__menu ul li a {
+  color: #4a238a;
+  text-decoration: none;
   font-size: 10px;
   font-weight: 300;
   text-transform: uppercase;
@@ -106,14 +113,29 @@ body {
           align-items: center;
 }
 
-.app__leftside__menu ul li .icon {
+.app__leftside__menu ul li a .icon {
   width: 26px;
   font-size: 26px;
   margin: 0px 14px 0px 0px;
 }
 
 .app__leftside__logout {
+  font-size: 10px;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0px 0px 0px 30px;
+}
+
+.app__leftside__logout .icon {
+  width: 26px;
+  font-size: 26px;
+  margin: 0px 14px 0px 0px;
 }
 
 .app__rightside {
@@ -178,6 +200,34 @@ body {
       flex-basis: 600px;
 }
 
+.app__rightside__content__latestnews__title {
+  padding: 21px 0px 21px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.6;
+  background-color: #090118;
+}
+
+.app__rightside__content__latestnews__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 600px;
+  height: 212px;
+}
+
+.app__rightside__content__latestnews__content {
+  padding: 23px 34px 19px 16px;
+  font-size: 11px;
+  font-weight: 100;
+  letter-spacing: 0.55px;
+  text-align: left;
+  background-color: #0f0323;
+  max-height: 229px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 .app__rightside__content__sidebar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -186,7 +236,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 65px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-radius: 3px;
+  margin-left: 65px;
 }
 
 .app__rightside__content__sidebar__findus {
@@ -203,5 +257,10 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   text-align: center;
+}
+
+.app__rightside__content__sidebar__findus a {
+  text-decoration: none;
+  color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */

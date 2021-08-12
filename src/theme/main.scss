@@ -52,23 +52,41 @@ body {
         padding: 0;
         list-style-type: none;
         li {
-          font-size: 10px;
-          font-weight: 300;
-          text-transform: uppercase;
-          padding: 16px 0px 16px 30px;
-          display: flex;
-          align-items: center;
+          .active {
+            color: #ffffff;
+            background-color: #1b102e;
+          }
+          a {
+            color: lighten($color: #341961, $amount: 10);
+            text-decoration: none;
+            font-size: 10px;
+            font-weight: 300;
+            text-transform: uppercase;
+            padding: 16px 0px 16px 30px;
+            display: flex;
+            align-items: center;
 
-          .icon {
-            width: 26px;
-            font-size: 26px;
-            margin: 0px 14px 0px 0px;
+            .icon {
+              width: 26px;
+              font-size: 26px;
+              margin: 0px 14px 0px 0px;
+            }
           }
         }
       }
     }
     &__logout {
+      font-size: 10px;
+      font-weight: 300;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
       padding: 0px 0px 0px 30px;
+      .icon {
+        width: 26px;
+        font-size: 26px;
+        margin: 0px 14px 0px 0px;
+      }
     }
   }
   &__rightside {
@@ -103,17 +121,47 @@ body {
       padding: 25px 65px 34px 65px;
       &__latestnews {
         flex-basis: 600px;
+        &__title {
+          padding: 21px 0px 21px 16px;
+          font-size: 12px;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 0.6;
+          background-color: #090118;
+        }
+        &__image {
+          object-fit: cover;
+          width: 600px;
+          height: 212px;
+        }
+        &__content {
+          padding: 23px 34px 19px 16px;
+          font-size: 11px;
+          font-weight: 100;
+          letter-spacing: 0.55px;
+          text-align: left;
+          background-color: #0f0323;
+          max-height: 229px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
       }
       &__sidebar {
         display: flex;
         flex-direction: column;
-        padding-left: 65px;
+        flex: 1;
+        border-radius: 3px;
+        margin-left: 65px;
         &__findus {
           display: flex;
           flex: 0.6;
           flex-direction: column;
           justify-content: space-around;
           text-align: center;
+          a {
+            text-decoration: none;
+            color: #ffffff;
+          }
         }
       }
     }
